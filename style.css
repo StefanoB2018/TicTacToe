@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Brush Script MT", cursive;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+#b1 {
+  font-size: 40px;
+}
+
+#b2 {
+  font-size: 40px;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-snap-align: start;
+}
+
+.dark {
+  background-color: #121212;
+  color: wheat;
+}
+
+.light {
+  background-color: wheat;
+  color: #121212;
+}
+
+.container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  font-size: 100px;
+  font-family: "Merienda One";
+}
+
+#light-board {
+  background-color: wheat;
+}
+
+#dark-board {
+  background-color: #303134;
+}
+
+.cell {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: Impact;
+  text-decoration: none;
+}
+
+a:hover {
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: impact;
+  color: inherit;
+  background-color: inherit;
+  margin: 5px;
+}
+
+button:hover {
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+#btn2{
+  border-color: rgb(255, 252, 246);
+}
