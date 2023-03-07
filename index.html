@@ -12,23 +12,25 @@
 </head>
 
 <body>
-  <section class="dark" id="dark-section">
-    <div class="container">
-      <h1 class="dark">Dark mode</h1>
-      <h1 class="dark" id="b1">Tic Tac Toe</h1>
-      <button id="btn1" onclick="reload(0)">Reload</button>
-      <div class="board" id="dark-board">
-        <div class="cell" id="0" onclick="play(this)"></div>
-        <div class="cell" id="1" onclick="play(this)"></div>
-        <div class="cell" id="2" onclick="play(this)"></div>
-        <div class="cell" id="3" onclick="play(this)"></div>
-        <div class="cell" id="4" onclick="play(this)"></div>
-        <div class="cell" id="5" onclick="play(this)"></div>
-        <div class="cell" id="6" onclick="play(this)"></div>
-        <div class="cell" id="7" onclick="play(this)"></div>
-        <div class="cell" id="8" onclick="play(this)"></div>
+<section class="dark" id="dark-section">
+<div class="container">
+<h1 class="dark">Dark mode</h1>
+<h1 class="dark" id="b1">Tic Tac Toe</h1>
+<button id="btn1" onclick="reload(1)">Reload</button>
+<div class="overlay">
+<div class="board" id="dark-board">
+<div class="cell" id="0" onclick="play(this)"></div>
+<div class="cell" id="1" onclick="play(this)"></div>
+<div class="cell" id="2" onclick="play(this)"></div>
+<div class="cell" id="3" onclick="play(this)"></div>
+<div class="cell" id="4" onclick="play(this)"></div>
+<div class="cell" id="5" onclick="play(this)"></div>
+<div class="cell" id="6" onclick="play(this)"></div>
+<div class="cell" id="7" onclick="play(this)"></div>
+<div class="cell" id="8" onclick="play(this)"></div>
       </div>
-      <a href="#light-section" onclick="reload()">Change to light</a>
+    </div>
+      <a href="#light-section" onclick="reload(1)">Change to light</a>
     </div>
   </section>
 
@@ -36,7 +38,7 @@
     <div class="container">
       <h1 class="light">Light mode</h1>
       <h1 class="light" id="b2">Tic Tac Toe</h1>
-      <button id="btn2" onclick="reload()">Reload</button>
+      <button id="btn2" onclick="reload(2)">Reload</button>
       <div class="board" id="light-board">
         <div class="cell" id="00" onclick="play(this)"></div>
         <div class="cell" id="01" onclick="play(this)"></div>
@@ -48,7 +50,7 @@
         <div class="cell" id="07" onclick="play(this)"></div>
         <div class="cell" id="08" onclick="play(this)"></div>
       </div>
-      <a href="#dark-section" onclick="reload(1)">Change to dark</a>
+      <a href="#dark-section" onclick="reload(2)">Change to dark</a>
     </div>
   </section>
 
