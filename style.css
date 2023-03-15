@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
   font-family: "Brush Script MT", cursive;
+  overflow: hidden;
 }
 
 h1 {

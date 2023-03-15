@@ -24,9 +24,6 @@ function play(value) {
     cell = value.innerHTML;
     //variabile per controllare quale tavolo da gioco è usato
     whichBoard = id.length;
-    //per prendere alla prima esecuzione il valore del tavolo
-    if (turn == 0)
-        isBoardDifferent = whichBoard;
     //se la cella è vuota viene eseguito
     if (cell == "") {
         //assegnazione del turno del giocatore
@@ -66,13 +63,6 @@ function play(value) {
                 reload();
             }
                 , 4000);
-        }
-
-        //restart quando il tavolo da gioco è diverso
-        if (isBoardDifferent != whichBoard) {
-            if(whichBoard == 1)
-                reload(2);
-            else reload(1);
         }
     }
 }
